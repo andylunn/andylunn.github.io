@@ -9,8 +9,7 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta name="apple-mobile-web-app-title" content="Vultrix" />
         <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width, shrink-to-fit=no" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="HandheldFriendly" content="true" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 		<style>
 			*{
@@ -22,12 +21,12 @@
 			body,html
 			{
 				padding:0;
-				margin:5px;
+				margin:0px;
 				width:100%;
 				height:100%;
 				display:block;
 				border:0;
-				overflow:hidden;
+
 				background-color:#222;
 				font-family:'Dosis', sans-serif;
 				color: #888;
@@ -42,21 +41,59 @@
 		</style>
 	</head>
 	<body>
-		<h1>Vultrix</h1>
-		<p>Welcome to the little slice of the internet for Andy Lunn.</p>
-		<p>IT Professional, Senior Software Developer, Carpenter, Maker, Husband and Father of four.</p>
-		<h2>Professional</h2>
-		<ul>
-			<li><a href='https://www.linkedin.com/in/andylunn/'>Linked In</a></li>
-			<li><a href='https://stackoverflow.com/story/andylunn'>Stackoverflow Story</a></li>
-			<li><a href='http://csveasy.com'>CSV Easy</a></li>
-			<li><a href='https://en.wikipedia.org/wiki/Die_Hard_Trilogy'>Die Hard Trilogy conversion</a>
-		</ul>
+        <div class="container-fluid" id="app">
+            <nav class="navbar navbar-expand-lg bg-dark bg-gradient">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link text-light-emphasis" href="https://www.youtube.com/c/AndyLunn/"><i class="fab fa-youtube"></i> YouTube</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light-emphasis" href="https://www.linkedin.com/in/andylunn/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light-emphasis" href="https://csveasy.com"><i class="fab fa-windows"></i> CSV Easy</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
 
-		<h2>Personal Projects</h2>
-		<ul>
-			<li><a href='https://vultrizone.itch.io/'>Indie Games</a></li>
-			<li><a href='https://www.youtube.com/c/AndyLunn/'>YouTube Channel</a></li>
-		</ul>
+            <div class="pb-md-4 mx-auto text-center">
+                <h1 class="display-1 fw-normal">Vultrix</h1>
+                <p class="fs-5">Welcome to the little slice of the internet for Andy Lunn. IT Professional, Senior Software Developer, Carpenter, Maker, Husband and Father of four.</p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 mb-3">
+                <div v-for="(item, index) in portfolio" class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <img v-if="item.Images" :src="item.Images[0].URL" class="card-img-top rounded-4 p-2"/>
+                        <div class="card-body">
+                            <h5 class="card-title">{{item.Title}} - {{item.Year}}</h5>
+                            <p class="card-text">{{item.Description}}</p>
+                        </div>
+                        <div class="card-body">
+                            <span v-for="(but, index) in item.Buttons">
+                                <a :href="but.URL" class="btn btn-primary">{{but.Title}}</a>
+                                <span v-if="but.Suffix" class="m-2">{{but.Suffix}}</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-md-4 mx-auto text-center">
+                <p class="fs-5"><i class="fas fa-copyright"></i> 2023 Andrew Lunn</p>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+        <script src="https://kit.fontawesome.com/163bf520b6.js" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
 	</body>
 </html>

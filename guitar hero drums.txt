@@ -1,0 +1,94 @@
+This is an old post that I have now moved over from my old WordPress site, but didn’t want to lose….
+
+I’ve always wanted to have my own drum kit in the house, but like many folks a real kit is expensive, large and extremely noisy. I noticed on the web that many a rock enthusiast wanted the same and turned to the likes of Guitar Hero and Rock Band. Using these plastic virtual instruments for more than their original intention is testament to the hacking communities we have today. So my adventure began…
+
+YouTube was my first port of call. Its great to see some videos of what is possible with these “toys” as instruments and boy did it not disappoint. Some truly awesome drummers have used multiple Rock Band drums to make a fairly substantially sized drum kit.
+
+Rock Band 1 kits are reasonable and cheap to pick up, but with only the four non-velocity sensitive pads and kick pedal they are somewhat limiting.
+
+
+So I delved further and read about the newer Rock Band 2 and Guitar Hero World Tour drums. These are both velocity sensitive, with GHWT including two cymbal pads and the Rock Band 2 set capable of taking three cymbals at an additional cost.
+
+
+
+
+With the velocity sensitive pads you can achieve a much more realistic drum as the force with which you hit it can be used to adjust the sound being played. So lightly tapping a cymbal will give a nice ting and whacking it with all your might will give a satisfying crash.
+
+So I decided the GHWT drums were the ones for me. I also had the dilemma of what hardware variant to use as the drums are available for XBOX, PS3 and Wii. I ultimately decided on the Wii as it was wireless via BlueTooth which was ideal for the Mac.
+The hardware
+
+So, after a swift order and delivery from Amazon, my shiny new drum kit had arrived:
+
+
+
+
+
+
+Very easy to assemble and with the donor Wiimote in place I was ready to ROCK! (pun intended). I’m a big guy (6" 5’) and still the kit seemed reasonably sized. The supplied real drum sticks are great, made even better with the pop-up sticks holder.
+The software
+
+As I am going to use the MacBook to drive all this I wanted to build a system based around GarageBand. I’d tinkered with it in the past and its MIDI capabilities seemed suitably fitting for my needs. What I didn’t have was the coupling software to convert the drum kit signals into MIDI that GarageBand could understand.
+
+What followed was a long hard googling session and the trialling of many pieces of freeware, shareware and commercial software. Now, as I was doing this as a hobby I didn’t want to spent a great deal of money as I’d already spent £80+ on the kit.
+
+Eventually I found OSCulator, a truly awesome piece of software for turning a wide variety of devices into MIDI triggers essentially. I’ve got to say a big thank you to Camille for making this superb tool.
+
+GarageBand
+
+The set-up for GarageBand is very easy. Open it up and it should be defaulted to New project with Piano selected. Leave it as this and click Choose, followed by Create on the New project from template dialog.
+
+Once the main window appears you will see one track in the top left called Grand Piano with a green background. This denotes it is a software instrument track.
+
+
+Now at the bottom right of the window there are three buttons.
+
+
+Click the “i” to show the track info panel on the right. It can take a few seconds to appear sometimes, not sure why.
+
+From the browse tab choose Drum Kits and then select the kit you wish to use. I use the Headbanger Kit, but this is only available with the Jam Packs add-on. If you just have vanilla GarageBand use the Rock Kit for an alternative.
+
+As you change the instrument you should see the track change from Grand Piano to Headbanger Kit / Rock Kit. That’s it, GarageBand is setup for live jamming.
+
+OSCulator
+
+Once opened for the first time you will see a blank screen and a message at the bottom saying “Press buttons 1&2 to connect to your Wiimote” So do just that. Hopefully your Wiimote should be identified and a list of inputs will appear on screen.
+
+
+
+
+
+To configure your first drum pad, pedal or cymbal, I found the easiest way is to trigger the item. So for this tutorial we will focus on the left red pad. So, strike that pad. In OSCulator you will see the input /wii/1/drums/pad/R/trig flash along with a new item appearing in the list called /wii/1/drums/pad/R/velo
+
+Now highlight the /wii/1/drums/pad/R/trig row and set the Event Type to MIDI Note, then set the Value to 40 E1. This value I know to be a snare drum on the Headbanger Kit. As you will find out you can play with these values to try all the different sounds available on that particular kit. Finally set a Channel - one in this instance. The channel gives you a unique handle for this drum pad.
+
+Now with any luck if you strike the red drum you will hear a snare. GarageBand must be open and set-up as discussed above for this to work. As you’ll notice though it might be quiet and only make the one distinct sound regardless how you hit the pad.
+
+So now we need to set-up the velocity. This time highlight the /wii/1/drums/pad/R/velo row and set the Event Type to MIDI Note again, but this time set the Value to Channel Velocity. Finally make sure the Channel number matches the trig row. What all this does is send a MIDI note of 40 E1 and a velocity setting based on how hard you hit the pad.. simple!
+
+Now all you need to do is configure all the other pads, cymbals and pedals. Make sure each one has its own unique channel to stop any cross velocity contamination.
+Extending the kit
+
+This is great, the kits working, but its still a little restrictive. With only 2 cymbals, 3 pads and a pedal - I’m pretty limited. Thankfully OSCulator allows further extension of the MIDI triggers through Meta events. On the GHWT kit there are a handful of buttons just above the Wiimote holder, which can also be configured.
+
+With these buttons I’m going to trigger the Presets switching event. Now a preset is a set of events and triggers, so as described above we’ve already set-up the default preset for the kit. Clicking on the Presets drop-down at the top allows us to add another one.
+
+
+
+As you can see here, I have two presets called Rock Kit - Normal and Rock Kit - Ride. Their set-up is identical except on the Ride preset I have changed the right cymbal to a ride cymbal and the left cymbal to a crash.
+
+Now all that’s left to do is configure the two events to switch presets. I have chosen to use the drum kits plus and minus buttons to toggle between them, but you could use any input.
+
+So like before you find the row for the given input, this time setting the event to Presets followed by the value of the Preset to switch to - like so:
+
+
+
+
+
+You will notice in the video below that I attempt to make a rapid switch of presets whilst playing. I manage it just about the first time, but not so hot the second. So I would like to use a pedal or balance board to do this.
+
+To save some time with all these configurations I have already created a working kit for OSCulator which you can downloaded here.
+Next steps
+
+In the future I intend to get another pedal as the kit seems to support it and hopefully use this as a hi-hat mechanism or second kick drum. OSCulator also supports the balance board (another pedal??) and the iPhone / iPod Touch.
+
+And finally, what sort of tutorial would this be without a video of me playing my kit like a pro novice ;)
