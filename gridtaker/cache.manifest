@@ -1,0 +1,12 @@
+CACHE MANIFEST
+ 
+# Offline cache v1.2
+
+CACHE:
+index.htm
+gridtaker.js
+jquery.js
+audio/music.mp3
+
+NETWORK:
+*
