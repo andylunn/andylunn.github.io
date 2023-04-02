@@ -112,6 +112,7 @@ createApp({
                 {
                     Title: 'Jack-o-Lantern\'s',
                     Year: 2022,
+                    Sort: 2022.10,
                     Tag: 'makes',
                     Description: 'A bunch of Jack-o-Lantern\'s for all the family at Halloween.',
                     Images:
@@ -174,6 +175,42 @@ createApp({
                     ]
                 },
                 {
+                    Title: 'Kids Coat Hanger',
+                    Year: 2023,
+                    Tag: 'makes',
+                    Description: 'A playful, coat hanger at a low level for the kids to use. Made from scrap plywood and an old broom handle. A tip of colour to make it all pop.',
+                    Images:
+                    [
+                        { URL: 'makes/kids coat hanger - sm.jpg'},
+                        { URL: 'makes/kids coat hanger.jpg'}
+                    ]
+                },
+                {
+                    Title: 'Wooden Xmas Tree Ornament',
+                    Year: 2022,
+                    Sort: 2022.12,
+                    Tag: 'makes',
+                    Description: 'Used up a ton of long thin scrap to create this neat little ornament at xmas time for the dining room table.',
+                    Images:
+                    [
+                        { URL: 'makes/xmas wooden tree - sm.jpg'},
+                        { URL: 'makes/xmas wooden tree.jpg'}
+                    ]
+                },
+                {
+                    Title: 'Collapsible Mini Table',
+                    Year: 2022,
+                    Sort: 2022.2,
+                    Tag: 'makes',
+                    Description: 'This was created specifically to take camping and hold a mini camp kitchen, but ended up being far more useful around the house as well as in the wild. Tripod legs screw into the bag.',
+                    Images:
+                    [
+                        { URL: 'makes/collapsible table - sm.jpg'},
+                        { URL: 'makes/collapsible table.jpg'},
+                        { URL: 'makes/collapsible table - flat.jpg'}
+                    ]
+                },
+                {
                     Title: 'GridTaker',
                     Year: 2012,
                     Tag: 'games',
@@ -194,7 +231,13 @@ createApp({
     {
         portfolioOrdered: function()
         {
-            return [...this.portfolio].sort(function(a, b) {return b.Year - a.Year});
+            return [...this.portfolio].sort(function(a, b)
+            {
+                if (b.Year == a.Year && b.Sort && a.Sort)
+                    return b.Sort - a.Sort;
+                else
+                    return b.Year - a.Year
+            });
         }
     },
     methods:
