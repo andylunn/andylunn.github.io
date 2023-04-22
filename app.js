@@ -9,7 +9,7 @@ createApp({
             [
                 {
                     Title: 'Geoplex',
-                    Year: 2010,
+                    Year: 2008,
                     Tag: 'games',
                     Description: `An action puzzler where you must work through the 44 hard as nails levels collecting cubes in the time allotted. Completionists will enjoy finding the hidden dark cubes to get that 100% progress.`,
                     Images:
@@ -18,12 +18,12 @@ createApp({
                     ],
                     Buttons:
                     [
-                        { Title: 'Download', URL: ''}
+                        { Title: 'Download', URL: 'downloads/geoplex2_1.exe', Suffix: '8mb'}
                     ]
                 },
                 {
                     Title: 'Overflow',
-                    Year: 2001,
+                    Year: 2004,
                     Tag: 'games',
                     Description: `A unique little puzzler where you must channel water to the exit to complete a level. Using the mouse you can draw goo to manipulate the landscape to force the water where you need it to go.`,
                     Images:
@@ -32,7 +32,53 @@ createApp({
                     ],
                     Buttons:
                     [
-                        { Title: 'Download', URL: ''}
+                        { Title: 'Download', URL: 'downloads/overflow2_0.exe', Suffix: '6mb'}
+                    ]
+                },
+                {
+                    Title: 'Rebellion',
+                    Year: 1994,
+                    Tag: 'games',
+                    Description: `Top down shooter for the Amiga computer. Thrust and blast your way through the hoards of enemies with your blaster and smart bombs.`,
+                    Images:
+                    [
+                        { URL: 'screenshots/rebellion - ingame.jpg'},
+                        { URL: 'screenshots/rebellion - titlescreen.jpg'}
+                    ],
+                    Buttons:
+                    [
+                        { Title: 'Download', URL: 'downloads/rebellion.adf', Suffix: '880kb'}
+                    ]
+                },
+                {
+                    Title: 'Phantom',
+                    Year: 1996,
+                    Tag: 'games',
+                    Description: `Side scrolling shooter in the style of defender for the Amiga computer.`,
+                    Images:
+                    [
+                        { URL: 'screenshots/phantom - ingame.jpg'},
+                        { URL: 'screenshots/phantom - titlescreen.jpg'}
+                    ],
+                    Buttons:
+                    [
+                        { Title: 'Download', URL: 'downloads/phantom.adf', Suffix: '880kb'}
+                    ]
+                },
+                {
+                    Title: 'Pooyan',
+                    Year: 1996,
+                    Tag: 'games',
+                    Description: `A seriously oddball puzzle/shooter game where you fly down a tunnel collecting colour bubbles to slowly reveal a word puzzle. Used the likeness of the Pooyan arcade game for some reason ;)`,
+                    Images:
+                    [
+                        { URL: 'screenshots/pooyan - screenshot2.png'},
+                        { URL: 'screenshots/pooyan - screenshot.png'},
+                        { URL: 'screenshots/pooyan - titlescreen.png'}
+                    ],
+                    Buttons:
+                    [
+                        { Title: 'Download', URL: 'downloads/pooyan.adf', Suffix: '880kb'}
                     ]
                 },
                 {
@@ -60,7 +106,7 @@ createApp({
                     ],
                     Buttons:
                     [
-                        { Title: 'Download', URL: ''}
+                        { Title: 'Download', URL: 'downloads/pyromania.zip', Suffix: '562kb'}
                     ]
                 },
                 {
@@ -75,6 +121,20 @@ createApp({
                     Buttons:
                     [
                         { Title: 'Wiki', URL: 'https://en.wikipedia.org/wiki/Die_Hard_Trilogy'}
+                    ]
+                },
+                {
+                    Title: 'Fear The Dronx',
+                    Year: 2010,
+                    Tag: 'games',
+                    Description: 'Snare and destroy the evil Dronx mastermind on each of the games 19 twisted levels over 3 chapters. A fresh and innovative take on the puzzle genre, described as a fusion of Chu Chu Rocket and Bomberman. Each level consists of a series of Dronx running riot around the level, you take control of a cursor that allows the placement of directors. Around the level are emitters, spewing out blocks and bombs that follow the path of the directors. Using this combination of tools you have to build, trap and explode the Dronx. When bombs hit a block they explode setting off a chain explosion where matching blocks touch. This opens up a whole world of puzzles to keep you scratching your head.',
+                    Images:
+                    [
+                        { URL: 'screenshots/ftd - screenshot.png'}
+                    ],
+                    Buttons:
+                    [
+                        { Title: 'Watch the Trailer', URL: 'http://www.youtube.com/watch?v=zEyub2ziemI&hd=1', Icon: 'fab fa-youtube'}
                     ]
                 },
                 {
@@ -141,6 +201,10 @@ createApp({
                     [
                         { URL: 'makes/side table - sm.jpg'},
                         { URL: 'makes/side table.jpg'}
+                    ],
+                    Buttons:
+                    [
+                        { Title: ' Watch the build', URL: 'https://www.youtube.com/watch?v=7Ie6XYHuVWU', Icon: 'fab fa-youtube'}
                     ]
                 },
                 {
@@ -177,12 +241,36 @@ createApp({
                 {
                     Title: 'Kids Coat Hanger',
                     Year: 2023,
+                    Sort: 2023.1,
                     Tag: 'makes',
                     Description: 'A playful, coat hanger at a low level for the kids to use. Made from scrap plywood and an old broom handle. A tip of colour to make it all pop.',
                     Images:
                     [
                         { URL: 'makes/kids coat hanger - sm.jpg'},
                         { URL: 'makes/kids coat hanger.jpg'}
+                    ]
+                },
+                {
+                    Title: 'Arcade Machine',
+                    Year: 2021,
+                    Tag: 'makes',
+                    Description: 'My lockdown project using classic joystick controls, and a wide array of nostalgic games to transport myself back to the golden age of arcades.',
+                    Images:
+                    [
+                        { URL: 'makes/arcade cabinet - sm.jpg'},
+                        { URL: 'makes/arcade cabinet.jpg'}
+                    ]
+                },
+                {
+                    Title: 'Mid-Century Modern Coat Hanger',
+                    Year: 2023,
+                    Sort: 2023.2,
+                    Tag: 'makes',
+                    Description: 'Made from a load of offcuts of hardwood from dark to light (outside to middle) in a mid-century modern style.',
+                    Images:
+                    [
+                        { URL: 'makes/adults coat hanger - sm.jpg'},
+                        { URL: 'makes/adults coat hanger.jpg'}
                     ]
                 },
                 {
@@ -223,13 +311,36 @@ createApp({
                     [
                         { Title: 'Play', URL: 'gridtaker/index.htm'}
                     ]
+                },
+                {
+                    Title: 'Pencil Box',
+                    Year: 2022,
+                    Sort: 2022.3,
+                    Tag: 'makes',
+                    Description: 'My daughter needed a large storage box for all her pens and pencils so I quickly built this including a branch from a tree she picked up on a walk.',
+                    Images:
+                    [
+                        { URL: 'makes/pencil box - sm.jpg'},
+                        { URL: 'makes/pencil box.jpg'}
+                    ]
+                },
+                {
+                    Title: 'Pallet Stool',
+                    Year: 2021,
+                    Tag: 'makes',
+                    Description: 'A bit of extra seating was needed in the lounge so a stiped down pallet and some scaffold board leftovers gave us this sturdy, rustic stool.',
+                    Images:
+                    [
+                        { URL: 'makes/pallet stool - sm.jpg'},
+                        { URL: 'makes/pallet stool.jpg'}
+                    ]
                 }
             ]
         }
     },
     computed:
     {
-        portfolioOrdered: function()
+        portfolioOrdered ()
         {
             return [...this.portfolio].sort(function(a, b)
             {
@@ -238,6 +349,18 @@ createApp({
                 else
                     return b.Year - a.Year
             });
+        },
+        currentYear ()
+        {
+            return new Date().getFullYear();
+        },
+        earliestCreation ()
+        {
+            return this.portfolioOrdered[this.portfolioOrdered.length - 1];
+        },
+        creationCount ()
+        {
+            return this.portfolio.length;
         }
     },
     methods:

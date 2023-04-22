@@ -40,6 +40,11 @@
 				text-decoration: none;
 			}
 
+      .itemTitle
+      {
+        color:azure;
+      }
+
       [v-cloak]
       {
         display: none;
@@ -71,21 +76,22 @@
 
             <div class="pb-md-4 mx-auto animate__animated animate__fadeIn">
                 <h1 class="display-1 fw-normal  text-center">Vultrix</h1>
-                <p class="fs-5">Welcome to the little slice of the internet for Andy Lunn. IT Professional, Senior Software Developer, Carpenter, Maker, Husband and Father of four.</p>
+                <p class="fs-5">Welcome to the little slice of the internet for Andy Lunn. IT Professional, Senior Software Developer, Retro-Gamer, Maker, Husband and Father of four.</p>
+                <p class="fs-5">Enjoy this curated history of my {{creationCount}} favourite creations over the last {{currentYear - earliestCreation.Year}} years:-</p>
             </div>
 
-            <div class="row row-cols-1 row-cols-md-3 mb-3">
+            <div class="row row-cols-1 row-cols-md-4 mb-3">
                 <div v-for="(item, index) in portfolioOrdered"
                   class="col mb-4 animate__animated" :class="randomAnim()">
                     <div class="card rounded-3 shadow-sm h-100 bg-dark bg-gradient">
                         <img v-if="item.Images" :src="item.Images[0].URL" class="card-img-top rounded-4 p-2"/>
                         <div class="card-body">
-                            <h5 class="card-title">{{item.Title}} - {{item.Year}}</h5>
+                            <h5 class="card-title itemTitle">{{item.Title}} - {{item.Year}}</h5>
                             <p class="card-text">{{item.Description}}</p>
                         </div>
-                        <div class="card-body">
+                        <div v-if="item.Buttons" class="card-footer">
                             <span v-for="(but, index) in item.Buttons">
-                                <a :href="but.URL" class="btn btn-primary">{{but.Title}}</a>
+                                <a :href="but.URL" class="btn btn-primary" target="_blank"><i v-if="but.Icon" :class="but.Icon"></i>{{but.Title}}</a>
                                 <span v-if="but.Suffix" class="m-2">{{but.Suffix}}</span>
                             </span>
                         </div>
@@ -94,7 +100,7 @@
             </div>
 
             <div class="pb-md-4 mx-auto text-center">
-                <p class="fs-5"><i class="fas fa-copyright"></i> 1997 - {{new Date().getFullYear()}} Andrew Lunn</p>
+                <p class="fs-5"><i class="fas fa-copyright"></i> 1994 - {{currentYear}} Andrew Lunn</p>
             </div>
         </div>
 
