@@ -290,7 +290,7 @@ createApp({
                     Year: 2022,
                     Sort: 2022.2,
                     Tag: 'makes',
-                    Description: 'This was created specifically to take camping and hold a mini camp kitchen, but ended up being far more useful around the house as well as in the wild. Tripod legs screw into the bag.',
+                    Description: 'This was created specifically to take camping and hold a mini camp kitchen, but ended up being far more useful around the house as well as in the wild. Tripod legs screw into the bottom.',
                     Images:
                     [
                         { URL: 'makes/collapsible table - sm.jpg'},
@@ -333,6 +333,30 @@ createApp({
                     [
                         { URL: 'makes/pallet stool - sm.jpg'},
                         { URL: 'makes/pallet stool.jpg'}
+                    ]
+                },
+                {
+                    Title: 'Ryobi Power Station',
+                    Year: 2022,
+                    Sort: 2022.7,
+                    Tag: 'makes',
+                    Description: 'A nice recycling projet to enable me to use all my Ryobi batteries for camping power.',
+                    Images:
+                    [
+                        { URL: 'makes/ryobi power station - sm.jpg'},
+                        { URL: 'makes/ryobi power station.jpg'}
+                    ]
+                },
+                {
+                    Title: 'Geometric Wood Art',
+                    Year: 2022,
+                    Sort: 2022.12,
+                    Tag: 'makes',
+                    Description: 'A geometric, symetric pattern wooden wall art. Made form scrap for my Wife for Xmas.',
+                    Images:
+                    [
+                        { URL: 'makes/geometric picture - sm.jpg'},
+                        { URL: 'makes/geometric picture.jpg'}
                     ]
                 }
             ]
