@@ -127,7 +127,7 @@ createApp({
                     Title: 'Fear The Dronx',
                     Year: 2010,
                     Tag: 'games',
-                    Description: 'Snare and destroy the evil Dronx mastermind on each of the games 19 twisted levels over 3 chapters. A fresh and innovative take on the puzzle genre, described as a fusion of Chu Chu Rocket and Bomberman. Each level consists of a series of Dronx running riot around the level, you take control of a cursor that allows the placement of directors. Around the level are emitters, spewing out blocks and bombs that follow the path of the directors. Using this combination of tools you have to build, trap and explode the Dronx. When bombs hit a block they explode setting off a chain explosion where matching blocks touch. This opens up a whole world of puzzles to keep you scratching your head.',
+                    Description: 'Snare and destroy the evil Dronx mastermind on each of the games 19 twisted levels over 3 chapters. A fresh and innovative take on the puzzle genre, described as a fusion of Chu Chu Rocket and Bomberman.',
                     Images:
                     [
                         { URL: 'screenshots/ftd - screenshot.png'}
@@ -358,7 +358,46 @@ createApp({
                         { URL: 'makes/geometric picture - sm.jpg'},
                         { URL: 'makes/geometric picture.jpg'}
                     ]
-                }
+                },
+                {
+                    Title: 'Shoe Storage',
+                    Year: 2023,
+                    Sort: 2023.8,
+                    Tag: 'makes',
+                    Description: 'A large storage unit to house all the families shoes. Made from recycled pallets.',
+                    Images:
+                    [
+                        { URL: 'makes/shoe storage - sm.jpg'},
+                        { URL: 'makes/shoe storage.jpg'}
+                    ]
+                },
+                {
+                    Title: 'CSV Easy',
+                    Year: 2007,
+                    Sort: 2007.12,
+                    Tag: 'software',
+                    Description: 'Launch of CSV Easy software, the all-in-one tool for anyone who works with CSV files.',
+                    Images:
+                    [
+                        { URL: 'screenshots/csveasy.png'}
+                    ],
+                    Buttons:
+                    [
+                        { Title: 'Visit', URL: 'http://csveasy.com'}
+                    ]
+                },
+                {
+                    Title: 'Valentines Gift',
+                    Year: 2021,
+                    Sort: 2021.2,
+                    Tag: 'makes',
+                    Description: 'A Valentines gift I made for my wife.',
+                    Images:
+                    [
+                        { URL: 'makes/valentines metal hearts - sm.jpg'},
+                        { URL: 'makes/valentines metal hearts.jpg'}
+                    ]
+                },
             ]
         }
     },

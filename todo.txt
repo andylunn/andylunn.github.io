@@ -1,10 +1,8 @@
 dining room table
 A-Frame stools
-Art piece
-Valentines gifts
 Friction fit table
 Bomberman
-CSV Easy release
+Apple box stool
 
 add carousel images
 add tag filter
