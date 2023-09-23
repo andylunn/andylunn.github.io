@@ -398,6 +398,42 @@ createApp({
                         { URL: 'makes/valentines metal hearts.jpg'}
                     ]
                 },
+                {
+                    Title: 'Kids Stool',
+                    Year: 2023,
+                    Sort: 2023.9,
+                    Tag: 'makes',
+                    Description: 'A gift for my niece to reach those places toddlers can\'t.',
+                    Images:
+                    [
+                        { URL: 'makes/kids stool - sm.jpg'},
+                        { URL: 'makes/kids stool.jpg'}
+                    ]
+                },
+                {
+                    Title: 'Tiki Mask',
+                    Year: 2023,
+                    Sort: 2023.7,
+                    Tag: 'makes',
+                    Description: 'To celebrate a Hawaiian party I made this litle decoration out of scrap pallet wood. Looks like a cross between Wallace and Crash Bandicoot.',
+                    Images:
+                    [
+                        { URL: 'makes/tiki mask - sm.jpg'},
+                        { URL: 'makes/tiki mask.jpg'}
+                    ]
+                },
+                {
+                    Title: 'Door Stop',
+                    Year: 2023,
+                    Sort: 2023.8,
+                    Tag: 'makes',
+                    Description: 'Massive chunky door stop from left over oak slabs and a WWII belt.',
+                    Images:
+                    [
+                        { URL: 'makes/door stop - sm.jpg'},
+                        { URL: 'makes/door stop.jpg'}
+                    ]
+                },
             ]
         }
     },
