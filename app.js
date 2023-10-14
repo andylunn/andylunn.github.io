@@ -434,6 +434,18 @@ createApp({
                         { URL: 'makes/door stop.jpg'}
                     ]
                 },
+                {
+                    Title: 'Gift Crate',
+                    Year: 2023,
+                    Sort: 2023.91,
+                    Tag: 'makes',
+                    Description: 'A crate for a baby shower gift hamper. All made from recycled pallets.',
+                    Images:
+                    [
+                        { URL: 'makes/gift box - sm.jpg'},
+                        { URL: 'makes/gift box.jpg'}
+                    ]
+                },
             ]
         }
     },
