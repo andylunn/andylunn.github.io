@@ -241,7 +241,7 @@ createApp({
                 {
                     Title: 'Kids Coat Hanger',
                     Year: 2023,
-                    Sort: 2023.1,
+                    Sort: 1,
                     Tag: 'makes',
                     Description: 'A playful, coat hanger at a low level for the kids to use. Made from scrap plywood and an old broom handle. A tip of colour to make it all pop.',
                     Images:
@@ -264,7 +264,7 @@ createApp({
                 {
                     Title: 'Mid-Century Modern Coat Hanger',
                     Year: 2023,
-                    Sort: 2023.2,
+                    Sort: 2,
                     Tag: 'makes',
                     Description: 'Made from a load of offcuts of hardwood from dark to light (outside to middle) in a mid-century modern style.',
                     Images:
@@ -362,7 +362,7 @@ createApp({
                 {
                     Title: 'Shoe Storage',
                     Year: 2023,
-                    Sort: 2023.8,
+                    Sort: 9,
                     Tag: 'makes',
                     Description: 'A large storage unit to house all the families shoes. Made from recycled pallets.',
                     Images:
@@ -401,7 +401,7 @@ createApp({
                 {
                     Title: 'Kids Stool',
                     Year: 2023,
-                    Sort: 2023.9,
+                    Sort: 10,
                     Tag: 'makes',
                     Description: 'A gift for my niece to reach those places toddlers can\'t.',
                     Images:
@@ -413,7 +413,7 @@ createApp({
                 {
                     Title: 'Tiki Mask',
                     Year: 2023,
-                    Sort: 2023.7,
+                    Sort: 7,
                     Tag: 'makes',
                     Description: 'To celebrate a Hawaiian party I made this litle decoration out of scrap pallet wood. Looks like a cross between Wallace and Crash Bandicoot.',
                     Images:
@@ -425,7 +425,7 @@ createApp({
                 {
                     Title: 'Door Stop',
                     Year: 2023,
-                    Sort: 2023.8,
+                    Sort: 8,
                     Tag: 'makes',
                     Description: 'Massive chunky door stop from left over oak slabs and a WWII belt.',
                     Images:
@@ -437,13 +437,25 @@ createApp({
                 {
                     Title: 'Gift Crate',
                     Year: 2023,
-                    Sort: 2023.91,
+                    Sort: 11,
                     Tag: 'makes',
                     Description: 'A crate for a baby shower gift hamper. All made from recycled pallets.',
                     Images:
                     [
                         { URL: 'makes/gift box - sm.jpg'},
                         { URL: 'makes/gift box.jpg'}
+                    ]
+                },
+                {
+                    Title: 'Blanket Box',
+                    Year: 2023,
+                    Sort: 12,
+                    Tag: 'makes',
+                    Description: 'Lots of recycled pallets turned into a large blanket box for the bedroom, with hinged lid.',
+                    Images:
+                    [
+                        { URL: 'makes/blanket box - sm.jpg'},
+                        { URL: 'makes/blanket box.jpg'}
                     ]
                 },
             ]
