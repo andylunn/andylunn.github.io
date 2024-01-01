@@ -12,6 +12,10 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"/>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
 		<style>
 			*{
 				-webkit-touch-callout:none;
@@ -45,6 +49,13 @@
         color:azure;
       }
 
+      .logo
+      {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       [v-cloak]
       {
         display: none;
@@ -75,7 +86,8 @@
             </nav>
 
             <div class="pb-md-4 mx-auto animate__animated animate__fadeIn">
-                <h1 class="display-1 fw-normal  text-center">Vultrix</h1>
+                <!-- <h1 class="display-1 fw-normal  text-center">Vultrix</h1> -->
+                <img src="logo.png" class="logo">
                 <p class="fs-5">Welcome to the little slice of the internet for Andy Lunn. IT Professional, Senior Software Developer, Retro-Gamer, Maker, Husband and Father of four.</p>
                 <p class="fs-5">Enjoy this curated history of my {{creationCount}} favourite creations over the last {{currentYear - earliestCreation.Year}} years:-</p>
             </div>

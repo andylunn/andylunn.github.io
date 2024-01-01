@@ -458,6 +458,18 @@ createApp({
                         { URL: 'makes/blanket box.jpg'}
                     ]
                 },
+                {
+                    Title: 'Hallway Drop',
+                    Year: 2023,
+                    Sort: 13,
+                    Tag: 'makes',
+                    Description: 'Rustic looking hallway drop for letters, keys and anything else in your pockets.',
+                    Images:
+                    [
+                        { URL: 'makes/hallway drop - sm.jpg'},
+                        { URL: 'makes/hallway drop.jpg'}
+                    ]
+                },
             ]
         }
     },
