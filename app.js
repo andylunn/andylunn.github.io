@@ -163,7 +163,7 @@ createApp({
                     Title: 'Trailer',
                     Year: 2018,
                     Tag: 'makes',
-                    Description: 'Custom trailer for camping. Additional height was added and a flip-top lid to accomodate our massive amount of camping gear.',
+                    Description: 'Custom trailer for camping. Huge box with flip-top lid to accomodate our massive amount of camping gear.',
                     Images:
                     [
                         { URL: 'makes/trailer.jpg'}
@@ -352,7 +352,7 @@ createApp({
                     Year: 2022,
                     Sort: 2022.12,
                     Tag: 'makes',
-                    Description: 'A geometric, symetric pattern wooden wall art. Made form scrap for my Wife for Xmas.',
+                    Description: 'A geometric, symetric pattern wooden wall art. Made from scrap for a Xmas gift.',
                     Images:
                     [
                         { URL: 'makes/geometric picture - sm.jpg'},
@@ -387,11 +387,11 @@ createApp({
                     ]
                 },
                 {
-                    Title: 'Valentines Gift',
+                    Title: 'Gift',
                     Year: 2021,
                     Sort: 2021.2,
                     Tag: 'makes',
-                    Description: 'A Valentines gift I made for my wife.',
+                    Description: 'Gift for a loved one.',
                     Images:
                     [
                         { URL: 'makes/valentines metal hearts - sm.jpg'},
