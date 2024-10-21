@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Holiday Offer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff4500;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .offer-banner {
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2.5rem;
+            text-align: center;
+            transition: background-image 0.5s ease;
+        }
+
+        .default-banner {
+            background-image: url('https://example.com/default-holiday.jpg'); /* Default image */
+        }
+
+        .special-offer-banner {
+            background-image: url('https://example.com/special-holiday.jpg'); /* Special offer image */
+        }
+
+        .advert-text {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .offer-details {
+            padding: 2rem;
+            text-align: center;
+        }
+
+            .offer-details h2 {
+                color: #ff4500;
+            }
+
+            .offer-details p {
+                font-size: 1.2rem;
+                color: #333;
+            }
+
+        .offer-button {
+            background-color: #ff4500;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            .offer-button:hover {
+                background-color: #ff6347;
+            }
+
+        .advert {
+            border: 2px solid #ff4500;
+            padding: 1rem;
+            margin-top: 2rem;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+            .advert h3 {
+                margin-bottom: 1rem;
+                color: #ff4500;
+            }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Exciting Holiday Offer - Book Now!</h1>
+    </header>
+
+    <!-- The offer banner changes based on API response -->
+    <div id="offer-banner" class="offer-banner default-banner">
+        <div class="advert-text" id="banner-text">
+            <p>Explore your dream vacation today!</p>
+        </div>
+    </div>
+
+    <div class="offer-details">
+        <h2>Limited Time Offer!</h2>
+        <p>Book your dream vacation now and enjoy the best rates. Don’t miss this once-in-a-lifetime opportunity!</p>
+        <p>Offer valid till: <strong>October 31, 2024</strong></p>
+        <button class="offer-button" onclick="bookNow()">Book Now</button>
+    </div>
+
+    <!-- Advert Section -->
+    <div class="advert">
+        <h3>Special Holiday Advert</h3>
+        <p>Looking for other travel deals? Explore our curated list of discounted holiday packages and find your next adventure.</p>
+    </div>
+
+    <script>
+    // Function to make the HTTP GET request and change the offer banner
+    function fetchOfferStatus()
+    {
+        const apiUrl = 'https://hivetrackingwebaudience20241021205513.azurewebsites.net/api/IsMember?code=s-ujnG-lBuFaeP5NFi5CdGdh79e7WSbpPkwhArKwSqpUAzFuRbtVIQ%3D%3D&tenant=DevTenant&audienceid=20551ed4-a15b-42f3-bad0-c1bf1bbf42d1&emailhash=ec428f01-3b01-dae2-c959-aecb77622b1a';
+
+        fetch(apiUrl) // This disables CORS but limits the response
+            .then(response =>
+            {
+                // Since no-cors prevents you from reading the response content, you can't check the status code directly
+                // But you can still assume it's OK for some basic use cases
+                console.log('Request sent. Limited response data due to no-cors mode.');
+                document.getElementById('offer-banner').classList.remove('default-banner');
+                document.getElementById('offer-banner').classList.add('special-offer-banner');
+                document.getElementById('banner-text').innerHTML = "<p>Limited Time Offer: 7 Nights in the Maldives for just £899!</p>";
+            })
+            .catch(error =>
+            {
+                console.error('Error fetching the offer status:', error);
+            });
+    }
+
+    // Function to simulate booking action
+    function bookNow() {
+      alert("Redirecting to the booking page!");
+      window.location.href = 'https://example.com/booking'; // Replace with actual booking URL
+    }
+
+    // Call the function to fetch the offer status when the page loads
+    window.onload = fetchOfferStatus;
+    </script>
+
+</body>
+</html>
