@@ -340,7 +340,7 @@ createApp({
                     Year: 2022,
                     Sort: 2022.7,
                     Tag: 'makes',
-                    Description: 'A nice recycling projet to enable me to use all my Ryobi batteries for camping power.',
+                    Description: 'A nice recycling project to enable me to use all my Ryobi batteries for camping power.',
                     Images:
                     [
                         { URL: 'makes/ryobi power station - sm.jpg'},
@@ -384,18 +384,6 @@ createApp({
                     Buttons:
                     [
                         { Title: 'Visit', URL: 'http://csveasy.com'}
-                    ]
-                },
-                {
-                    Title: 'Gift',
-                    Year: 2021,
-                    Sort: 2021.2,
-                    Tag: 'makes',
-                    Description: 'Gift for a loved one.',
-                    Images:
-                    [
-                        { URL: 'makes/valentines metal hearts - sm.jpg'},
-                        { URL: 'makes/valentines metal hearts.jpg'}
                     ]
                 },
                 {
